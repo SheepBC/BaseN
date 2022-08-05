@@ -1,9 +1,6 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class BaseN {
 
@@ -101,16 +98,16 @@ public class BaseN {
     }
 
     private boolean contain(String s){
-        return List.of(list).contains(s);
+        return Arrays.asList(list).contains(s);
     }
 
     private int getNum(String s){
-        ArrayList<String> list = new ArrayList<>(List.of(this.list));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(this.list));
         return list.indexOf(s);
     }
 
     private boolean checkList(String[] list){
-        Set<String> list2 = new HashSet<>(List.of(list));
+        Set<String> list2 = new HashSet<>(Arrays.asList(list));
         if(list.length != list2.size()) return false;
         for(String s:list){
             if(s.length() != 1) return false;
