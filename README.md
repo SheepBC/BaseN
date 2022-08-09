@@ -22,3 +22,36 @@ class Main{
 
 * List는 중복없이 한글자로만 이루어져야한다.
 * BaseNToDecimal로 나온 String을 Double로 바꿀 경우 뒤쪽이 0 으로바꾸는 오류가있다 
+
+## 다운로드
+
+### Maven
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+```xml
+<dependency>
+    <groupId>com.github.yangberrry</groupId>
+    <artifactId>BaseN</artifactId>
+    <version>최신버전</version>
+</dependency>
+```
+### Gradle
+
+```groovy
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+```groovy
+dependencies {
+    implementation 'com.github.yangberrry:BaseN:최신버전'
+}
+```
