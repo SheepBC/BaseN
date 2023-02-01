@@ -9,9 +9,9 @@ plugins {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.github.yangberrry'
+            groupId = 'com.github.sheepbc'
             artifactId = 'BaseN'
-            version = '1.0.1'
+            version = '1.0.2'
 
             from components.java
         }

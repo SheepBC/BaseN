@@ -36,7 +36,7 @@ class Main{
 ```
 ```xml
 <dependency>
-    <groupId>com.github.yangberrry</groupId>
+    <groupId>com.github.sheepbc</groupId>
     <artifactId>BaseN</artifactId>
     <version>최신버전</version>
 </dependency>
@@ -52,6 +52,6 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    implementation 'com.github.yangberrry:BaseN:최신버전'
+    implementation 'com.github.sheepbc:BaseN:최신버전'
 }
 ```
